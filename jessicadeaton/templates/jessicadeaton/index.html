@@ -1,9 +1,10 @@
-<html>
-	<head>
-		<title>Jessica Deaton</title>
-	</head>
-	<body>
-		<h1>Jessica Deaton</h1>
-		<a href="{% url 'post_list' %}">POSTS</a>
-	</body>
-</html>
+{% extends 'jessicadeaton/base.html' %}
+
+{% block content %}
+
+	<a href="{% url 'post_list' %}">Posts</a>
+	<a href="{% url 'now' %}">Now</a>
+	<a href="{% url 'about' %}">About</a>
+
+
+{% endblock %}
